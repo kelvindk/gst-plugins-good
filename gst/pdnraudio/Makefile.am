@@ -1,6 +1,6 @@
 plugin_LTLIBRARIES = libgstpdnraudio.la
 
-libgstpdnraudio_la_SOURCES = gstspectrum.c
+libgstpdnraudio_la_SOURCES = gstpdnraudio.c
 libgstpdnraudio_la_CFLAGS = $(GST_PLUGINS_BASE_CFLAGS) $(GST_BASE_CFLAGS) \
 	$(GST_CFLAGS)
 libgstpdnraudio_la_LIBADD = $(GST_PLUGINS_BASE_LIBS) \
