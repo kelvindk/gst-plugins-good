@@ -1,0 +1,12 @@
+mpg123_dep = dependency('libmpg123', version : '>= 1.3', required : false)
+
+if mpg123_dep.found()
+  gstmpg123 = library('gstmpg123',
+    'gstmpg123audiodec.c',
+    c_args : gst_plugins_good_args,
+    include_directories : [configinc],
+    dependencies : [gstaudio_dep, mpg123_dep],
+    install : true,
+    install_dir : plugins_install_dir,
+  )
+endif
