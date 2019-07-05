@@ -360,7 +360,7 @@ fft_window_noise_reduction (GstPdNrAudio *pdnraudio) {
 #endif
     }
 
-    g_print ("freq_r_i_sum %lf %d\n", freq_r_i_sum, freq_anr_count);
+    // g_print ("freq_r_i_sum %lf %d\n", freq_r_i_sum, freq_anr_count);
     // if((freq_r_i_sum <= 60) && (freq_anr_count <= 8)) {
     //   g_free(tmp_freq_data);
     //   tmp_freq_data = g_new0 (GstFFTF32Complex, FFT_SIZE);

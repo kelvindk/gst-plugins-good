@@ -93,7 +93,7 @@ struct _GstPdNrAudio
 
   gfloat *adaptR;
   gfloat *adaptI;
-
+    
   FILE *aFile;
   FILE *bFile;
 };
